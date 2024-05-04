@@ -13,7 +13,7 @@ def koch_snowflake(t: turtle.Turtle, order: int, size: float) -> None:
 def draw_koch_snowflake(order: int, size: float) -> None:
     window = turtle.Screen()
     window.bgcolor("white")
-    window.title("Koch Snowflake")
+    window.title("-= Koch Snowflake =-")
 
     t = turtle.Turtle()
     t.speed(0)
@@ -30,7 +30,7 @@ def draw_koch_snowflake(order: int, size: float) -> None:
 
 
 def start_draw_koch_snowflake():
-    order = int(input("Enter the recursion depth: "))
+    order = int(input("Enter the recursion depth (example: 4): "))
     size = 450
     draw_koch_snowflake(order, size)
 
